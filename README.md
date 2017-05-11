@@ -11,8 +11,8 @@ RSI-CB
 ====
 ## 1) Distribution of POI
 
-According to the global distribution of OSM, we selected the cities such as `Beijing, Shanghai, New York and Washington, London ，Liverpool，Berlin,Tokyo,Paris,Toronto and other cities around the world`.Below are the visualization of POI distribution.
-   ![](https://github.com/wzx918/test/blob/master/osm%E5%88%86%E5%B8%83%E5%9B%BE.png)
+According to the global distribution of OSM, we selected the cities such as `Beijing, Shanghai, New York and Washington, London ，Liverpool，Berlin,Tokyo,Paris,Toronto and other cities around the world`.Below are the visualization of POI distribution.<br>
+         ![](https://github.com/wzx918/test/blob/master/osm%E5%88%86%E5%B8%83%E5%9B%BE.png)
 
 ----
 ## 2) Category hierarchy
@@ -30,6 +30,12 @@ RSI-CB128 , containing 45 categories, about 36000 images, an average of 800 imag
 -----
 Model
 ====
-We have used method of handcrafted features(eg, SIFT/CH/LBP/GIST) and deep convolution networks (eg AlxeNet/VGG16/GoogleNet /ResNet,model can be downloaded [here](https://1drv.ms/f/s!Auv9HKTH1GC9a-SqCjiPVgGpI-0) ) to test RSI-CB and the existing remote sensing image database (eg,UC-Merced / Sat-4 / Sat-6)) .Below are the precision contrast 
+## 1)handcrafted features && deep convolution networks
+We have used method of handcrafted features(eg, SIFT/CH/LBP/GIST) and deep convolution networks (eg AlxeNet/VGG16/GoogleNet /ResNet,`model can be downloaded` [here](https://1drv.ms/f/s!Auv9HKTH1GC9a-SqCjiPVgGpI-0) ) to test RSI-CB and the existing remote sensing image database (eg,UC-Merced / Sat-4 / Sat-6)) .Below are the precision contrast 
                  ![](https://github.com/wzx918/test/blob/master/%E4%BC%A0%E7%BB%9F%E6%96%B9%E6%B3%95%E7%BB%93%E6%9E%9C.png)
                      ![](https://github.com/wzx918/test/blob/master/dl%E6%96%B9%E6%B3%95%E7%BB%93%E6%9E%9C.png)
+                    
+----
+## 2) capability of model transfer
+In order to test the transfer ability of the RSI-CB training model, we selected the common 13 categories of the RSI-CB256 and UCM databases, with 100 images per category, and trained AlexNet-Conv3 with the rest RSI-CB256 of 13 categories , the experimental results show that RSI-CB training model has good transfer ability.
+                      ![](https://github.com/wzx918/test/blob/master/%E8%BF%81%E7%A7%BB%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95.png)
