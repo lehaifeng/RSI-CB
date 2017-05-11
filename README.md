@@ -1,9 +1,10 @@
 # RSI-CB: A Large Scale Remote Sensing Image Classification Benchmark via Crowdsource Data
  
- * ### Paper and benchmark will come soon
+ * ### `Paper and benchmark will come soon`
  
-====
-We propose a scalable remote sensing benchmark based on crowd source data, which can efficiently label the remote sensing image through the crowdsource data at hand.On the basis of this method, we construct a global scale large-scale remote sensing image classification database.  
+=======
+
+ We propose a scalable remote sensing benchmark based on crowd source data, which can efficiently label the remote sensing image through the crowdsource data at hand.On the basis of this method, we construct a global scale large-scale remote sensing image classification database.  
 There are six kinds of land category:`cultivated land `,` construction land and facilities`, `transportation and facilities`,` water area and facilities`, `woodland`, and `other land `, where each category has several subclasses. Considering the different depth of the convolution network for the image size requirements, we built a` 256 * 256` and `128 * 128` size of the two data sets, the former contains `35 categories` of objects, a total of more than `24,000 images`, the later contains `45 categories`,a total of more than `36,000 images`. 
  
 Finally, We analyzed the image classification accuracy of several classical depth learning models such as AlexNet, VGGNet, GoogleNet, ResNet in RSI-CB, SAT-4, SAT-6, UC-Merced datasets and method of handcrafted features such as SIFT, CH, LBP, Gist to measure different performance on RSI-CB256 and UC-Merced ,all above showing that RSI-CB is more suitable as the model of the remote sensing image classification task, the result suggested that the model trained by the RSI-CB data has a good generalization ability and can be used in practical applications.
