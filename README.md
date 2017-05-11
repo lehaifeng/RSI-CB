@@ -23,13 +23,13 @@ According to the Chinese land classification standard and the ImageNet hierarchi
 -----
 ## 3) RSI-CB128&RSI-CB256
 
-RSI-CB128 , containing 45 categories, about 36000 images, an average of 800 images per category; RSI-CB256,containing 35 categories,about 24000 images, an average of 690 images per category.`The benckmark will come sone`\<br>  
+RSI-CB128 , containing 45 categories, about 36000 images, an average of 800 images per category; RSI-CB256,containing 35 categories,about 24000 images, an average of 690 images per category.`The benckmark will come sone`<br>  
                  ![](https://github.com/wzx918/test/blob/master/%E6%95%B0%E9%87%8F%E5%88%86%E5%B8%83.png)
-                 ![](https://github.com/wzx918/test/blob/master/128%E6%A0%B7%E6%9C%AC%E5%9B%BE.png)
+                                   ![](https://github.com/wzx918/test/blob/master/128%E6%A0%B7%E6%9C%AC%E5%9B%BE.png)
                  
 -----
 Model
 ====
 We have used method of handcrafted features(eg, SIFT/CH/LBP/GIST) and deep convolution networks (eg AlxeNet/VGG16/GoogleNet /ResNet,model can be downloaded [here](https://1drv.ms/f/s!Auv9HKTH1GC9a-SqCjiPVgGpI-0) ) to test RSI-CB and the existing remote sensing image database (eg,UC-Merced / Sat-4 / Sat-6)) .Below are the precision contrast 
                  ![](https://github.com/wzx918/test/blob/master/%E4%BC%A0%E7%BB%9F%E6%96%B9%E6%B3%95%E7%BB%93%E6%9E%9C.png)
-                 ![](https://github.com/wzx918/test/blob/master/dl%E6%96%B9%E6%B3%95%E7%BB%93%E6%9E%9C.png)
+                     ![](https://github.com/wzx918/test/blob/master/dl%E6%96%B9%E6%B3%95%E7%BB%93%E6%9E%9C.png)
