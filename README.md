@@ -12,7 +12,7 @@ Finally, We analyzed the image classification accuracy of several classical dept
 ----
 RSI-CB
 ====
-* [RSI-CB256 can be downloaded here in OneDrive](https://1drv.ms/u/s!Am218i8VSQEBaTyXDc-zA56zPv4) or [here in BaiduYun]https://pan.baidu.com/s/1geTXv3P）
+* [RSI-CB256 can be downloaded here in OneDrive](https://1drv.ms/u/s!Am218i8VSQEBaTyXDc-zA56zPv4) or [here in BaiduYun](https://pan.baidu.com/s/1pLnZQ23)
 * [RSI-CB128 is here in OneDrive](https://1drv.ms/u/s!Auv9HKTH1GC9jBbv-XzBFyMegqlL) or [here in BaiduYun](https://pan.baidu.com/s/1bpIQ0IN)
 ## 1) Distribution of POI
 
