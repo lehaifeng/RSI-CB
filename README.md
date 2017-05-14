@@ -13,7 +13,7 @@ Finally, We analyzed the image classification accuracy of several classical dept
 RSI-CB
 ====
 * [RSI-CB256 can be downloaded here in OneDrive](https://1drv.ms/u/s!Am218i8VSQEBaTyXDc-zA56zPv4) or [here in BaiduYun](https://pan.baidu.com/s/1pLnZQ23)
-* [RSI-CB128 is here in OneDrive](https://1drv.ms/u/s!Auv9HKTH1GC9jBbv-XzBFyMegqlL) or [here in BaiduYun](https://pan.baidu.com/s/1bpIQ0IN)
+* [RSI-CB128 can be downloaded here in OneDrive](https://1drv.ms/u/s!Auv9HKTH1GC9jBbv-XzBFyMegqlL) or [here in BaiduYun](https://pan.baidu.com/s/1bpIQ0IN)
 ## 1) Distribution of POI
 
 According to the global distribution of OSM, we selected the cities such as `Beijing, Shanghai, New York and Washington, London ，Liverpool，Berlin,Tokyo,Paris,Toronto and other cities around the world`.Below are the visualization of POI distribution.<br>
@@ -36,7 +36,7 @@ RSI-CB128 , containing 45 categories, about 36000 images, an average of 800 imag
 Model
 ====
 ## 1)handcrafted features && deep convolution networks
-We have used method of handcrafted features(eg, SIFT/CH/LBP/GIST) and deep convolution networks (eg AlxeNet/VGG16/GoogleNet /ResNet,`model can be downloaded` [here in OneDrive](https://1drv.ms/f/s!Auv9HKTH1GC9a-SqCjiPVgGpI-0) or [here in BaiduYun](https://pan.baidu.com/s/1gfcePUV) ) to test RSI-CB and the existing remote sensing image database (eg,UC-Merced / Sat-4 / Sat-6)) .Below are the precision contrast 
+We have used method of handcrafted features(eg, SIFT/CH/LBP/GIST) and deep convolution networks (eg AlxeNet/VGG16/GoogleNet /ResNet,[models can be downloaded here in OneDrive](https://1drv.ms/f/s!Auv9HKTH1GC9a-SqCjiPVgGpI-0) or [here in BaiduYun](https://pan.baidu.com/s/1gfcePUV) ) to test RSI-CB and the existing remote sensing image database (eg,UC-Merced / Sat-4 / Sat-6)) .Below are the precision contrast 
                  ![](https://github.com/wzx918/test/blob/master/%E4%BC%A0%E7%BB%9F%E6%96%B9%E6%B3%95%E7%BB%93%E6%9E%9C.png)
                      ![](https://github.com/wzx918/test/blob/master/dl%E6%96%B9%E6%B3%95%E7%BB%93%E6%9E%9C.png)
                     
