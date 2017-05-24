@@ -17,30 +17,31 @@ RSI-CB
 ## 1) Distribution of POI
 
 According to the global distribution of OSM, we selected the cities such as `Beijing, Shanghai, New York and Washington, London ，Liverpool，Berlin,Tokyo,Paris,Toronto and other cities around the world`.Below are the visualization of POI distribution.<br>
-         ![](https://github.com/wzx918/test/blob/master/osm%E5%88%86%E5%B8%83%E5%9B%BE.png)
+<div align=center><img src="https://github.com/wzx918/test/blob/master/osm%E5%88%86%E5%B8%83%E5%9B%BE.png"/></div>
 
 ----
 ## 2) Category hierarchy
 
 According to the Chinese land classification standard and the ImageNet hierarchical grading mechanism, the common class between the Chinese land classification standard and the OSM categories are selected as the priority object.
-  ![](https://github.com/wzx918/test/blob/master/%E5%88%86%E5%B1%82%E5%88%86%E7%BA%A7.png)
+<div align=center><img src="https://github.com/wzx918/test/blob/master/%E5%88%86%E5%B1%82%E5%88%86%E7%BA%A7.png"/></div>
 
 -----
 ## 3) RSI-CB128&RSI-CB256
 
 RSI-CB128 , containing 45 categories, about 36000 images, an average of 800 images per category; RSI-CB256,containing 35 categories,about 24000 images, an average of 690 images per category.<br>  
-                 ![](https://github.com/wzx918/test/blob/master/%E6%95%B0%E9%87%8F%E5%88%86%E5%B8%83.png)
-                                   ![](https://github.com/wzx918/test/blob/master/128%E6%A0%B7%E6%9C%AC%E5%9B%BE.png)
-                 
+<div align=center><img src="https://github.com/wzx918/test/blob/master/%E6%95%B0%E9%87%8F%E5%88%86%E5%B8%83.png"/></div>
+<div align=center><img src="https://github.com/wzx918/test/blob/master/128%E6%A0%B7%E6%9C%AC%E5%9B%BE.png"/></div>
+                              
 -----
 Model
 ====
 ## 1)handcrafted features && deep convolution networks
 We have used method of handcrafted features(eg, SIFT/CH/LBP/GIST) and deep convolution networks (eg, AlxeNet/VGG16/GoogleNet /ResNet,[models can be downloaded here in OneDrive](https://1drv.ms/f/s!Auv9HKTH1GC9a-SqCjiPVgGpI-0) or [here in BaiduYun](https://pan.baidu.com/s/1gfcePUV) ) to test RSI-CB and the existing remote sensing image database (eg,UC-Merced / Sat-4 / Sat-6) .Below are the precision contrast 
-                 ![](https://github.com/wzx918/test/blob/master/%E4%BC%A0%E7%BB%9F%E6%96%B9%E6%B3%95%E7%BB%93%E6%9E%9C.png)
-                     ![](https://github.com/wzx918/test/blob/master/dl%E6%96%B9%E6%B3%95%E7%BB%93%E6%9E%9C.png)
-                    
+<div align=center><img src="https://github.com/wzx918/test/blob/master/%E4%BC%A0%E7%BB%9F%E6%96%B9%E6%B3%95%E7%BB%93%E6%9E%9C.png"/></div>
+<div align=center><img src="https://github.com/wzx918/test/blob/master/dl%E6%96%B9%E6%B3%95%E7%BB%93%E6%9E%9C.png"/></div>
+                                   
 ----
 ## 2) capability of model transfer
 In order to test the transfer ability of the RSI-CB training model, we selecte the common 13 categories of the RSI-CB256 and UCM databases, with 100 images per category, and train AlexNet-Conv3 with the rest images of RSI-CB256 for the common 13 categories , experimental results show that RSI-CB training model has a good transfer ability.
-                      ![](https://github.com/wzx918/test/blob/master/%E8%BF%81%E7%A7%BB%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95.png)
+<div align=center><img src="https://github.com/wzx918/test/blob/master/%E8%BF%81%E7%A7%BB%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95.png"/></div>
+  
