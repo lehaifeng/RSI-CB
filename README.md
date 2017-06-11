@@ -1,13 +1,12 @@
 # RSI-CB: A Large Scale Remote Sensing Image Classification Benchmark via Crowdsource Data
  
- * ### `Paper will come soon,thank you for your attention.`
+ * ### The manuscript can be downloaded from https://arxiv.org/abs/1705.10450.
  
+(1).	We propose a crowdsource data-based method to build a RSI-CB. The crowdsource data in our method is a high-precision supervisor. Traditional methods require a significant amount of manual work; thus, they are less efficient and time-consuming. Using crowdsource data as a supervisor facilitates machine self-learning through the Internet. Moreover, the size of the benchmark sample could be infinite both in amount and variety. In addition, crowdsource data are basic data sources in the big data era and are updated rapidly. Therefore, the remote sensing benchmark constructed using crowdsource data can possibly continue to expand in terms of diversity, quantity, and robustness of samples. Consequently, our method can potentially realize weak unsupervised learning further for remote sensing image.
 
-We propose a scalable remote sensing benchmark based on crowdsource data, which can efficiently label the remote sensing image through the crowdsource data at hand.On the basis of this method, we construct a global scale large-scale remote sensing image classification benchmark. 
- 
-There are six kinds of land categories:`cultivated land `,` construction land and facilities`, `transportation and facilities`,` water area and facilities`, `woodland`, and `other land `, where each category has several subclasses. Considering the different depth of the convolution network for the image size requirements, we built a` 256 * 256` and `128 * 128` size of the two data sets, the former contains `35 categories` of objects, a total of more than `24,000 images`, the later contains `45 categories`,a total of more than `36,000 images`. 
- 
-Finally, We analyze the image classification accuracy of several classical depth learning models such as AlexNet, VGGNet, GoogleNet, ResNet in RSI-CB, SAT-4, SAT-6, UC-Merced datasets and method of handcrafted features such as SIFT, CH, LBP, Gist to measure different performance on RSI-CB256 and UC-Merced，what's more,we have measured transfer performance of model trained by RSI-CB.All above showing that RSI-CB is more suitable as the model of the remote sensing image classification task, the result suggested that the model trained by the RSI-CB benchmark has a good generalization ability and can be used in practical applications.
+(2).	Based on the above method, we construct a global -scale RSI-CB. Considering the different image size requirements of the DCNN, we construct two datasets of 256 × 256 and 128 × 128 pixel sizes (RSI-CB256 and RSI-CB128, respectively) with 0.3–3-m spatial resolutions. The former contains 35 categories and more than 24,000 images. The latter contains 45 categories and more than 36,000 images. We establish a strict object category system according to the national standard of land-use classification in China and the hierarchical grading mechanism of ImageNet. The six categories are agricultural land, construction land and facilities, transportation and facilities, water and water conservancy facilities, woodland, and other land.
+
+(3).	We conduct various experiments to compare RSI-CB with SAT-4, SAT-6, and UC-Merced datasets on handcrafted features, such as scale-invariant feature transform (SIFT), color histogram indexing (CH), local binary patterns (LBP), GIST, and classical DCNN models, such as AlexNet, VGGNet, GoogLeNet, and ResNet. In addition, we demonstrate that DCNN models trained by RSI-CB have good performance when transferred to other datasets, that is, UC-Merced, and good generalization ability. The experiments show that RSI-CB is a more suitable benchmark for remote sensing image classification than other benchmarks in the big data era, and has potential applications.
 
 ----
 RSI-CB
@@ -16,7 +15,7 @@ RSI-CB
 * [RSI-CB128 can be downloaded here in OneDrive](https://1drv.ms/u/s!Auv9HKTH1GC9jBbv-XzBFyMegqlL) or [here in BaiduYun](https://pan.baidu.com/s/1bpIQ0IN)
 ## 1) Distribution of POI
 
-According to the global distribution of OSM, we selected the cities such as `Beijing, Shanghai, New York and Washington, London ，Liverpool，Berlin,Tokyo,Paris,Toronto and other cities around the world`.Below are the visualization of POI distribution.<br>
+According to the global distribution of OSM, we selected the cities such as `Beijing, Shanghai, New York and Washington, London ，Liverpool，Berlin,Tokyo,Paris,Toronto and other cities around the world`. The POI distribution was shown as following.<br>
 <div align=center><img src="https://github.com/wzx918/test/blob/master/osm%E5%88%86%E5%B8%83%E5%9B%BE.png"/></div>
 
 ----
@@ -28,20 +27,20 @@ According to the Chinese land classification standard and the ImageNet hierarchi
 -----
 ## 3) RSI-CB128 & RSI-CB256
 
-RSI-CB128 contains 45 categories, about 36000 images, an average of 800 images per category; RSI-CB256 contains 35 categories,about 24000 images, an average of 690 images per category.<br>  
+RSI-CB128 contains 45 categories, about 36000 images. There is an average of 800 images in each category; RSI-CB256 contains 35 categories,about 24000 images. There is an average of 690 images in each category.<br>  
 <div align=center><img src="https://github.com/wzx918/test/blob/master/%E6%95%B0%E9%87%8F%E5%88%86%E5%B8%83.png"/></div>
 <div align=center><img src="https://github.com/wzx918/test/blob/master/128%E6%A0%B7%E6%9C%AC%E5%9B%BE.png"/></div>
                               
 -----
-Model
+Models:
 ====
-## 1)handcrafted features && deep convolution networks
-We have used method of handcrafted features(eg, SIFT/CH/LBP/GIST) and deep convolution networks (eg, AlxeNet/VGG16/GoogleNet /ResNet,[models can be downloaded here in OneDrive](https://1drv.ms/f/s!Auv9HKTH1GC9a-SqCjiPVgGpI-0) or [here in BaiduYun](https://pan.baidu.com/s/1gfcePUV) ) to test RSI-CB and the existing remote sensing image database (eg,UC-Merced / Sat-4 / Sat-6) .Below are the precision contrast 
+## 1) Handcrafted features && DCNNs
+We used method of handcrafted features(eg, SIFT/CH/LBP/GIST) and DCNNs (e.g., AlxeNet/VGG16/GoogleNet/ResNet,[models can be downloaded here in OneDrive](https://1drv.ms/f/s!Auv9HKTH1GC9a-SqCjiPVgGpI-0) or [here in BaiduYun](https://pan.baidu.com/s/1gfcePUV) ) to test RSI-CB and other relatived banchmarks (e.g. UC-Merced / Sat-4 / Sat-6). The precision matrix was listed as following: 
 <div align=center><img src="https://github.com/wzx918/test/blob/master/%E4%BC%A0%E7%BB%9F%E6%96%B9%E6%B3%95%E7%BB%93%E6%9E%9C.png"/></div>
 <div align=center><img src="https://github.com/wzx918/test/blob/master/dl%E6%96%B9%E6%B3%95%E7%BB%93%E6%9E%9C.png"/></div>
                                    
 ----
-## 2) capability of model transfer
-In order to test the transfer ability of the RSI-CB training model, we selecte the common 13 categories of the RSI-CB256 and UCM databases, with 100 images per category, and train AlexNet-Conv3 with the rest images of RSI-CB256 for the common 13 categories , experimental results show that RSI-CB training model has a good transfer ability.
+## 2) Transfer capability 
+In order to test the transfer ability of the RSI-CB training model, we choosed the common 13 categories of the RSI-CB256 and UCM databases, with 100 images per category, and trained AlexNet-Conv3 with the rest images of RSI-CB256 for the common 13 categories. Experimental results showed that models trained by RSI-CB had good transfer ability.
 <div align=center><img src="https://github.com/wzx918/test/blob/master/%E8%BF%81%E7%A7%BB%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95.png"/></div>
   
